@@ -7,11 +7,11 @@ export class HighlightDirective {
 
   constructor(private elem: ElementRef) { }
    
-  @HostListener('mouseenter') onMouseEnter() {
-    this.highlight('yellow')
+  @HostListener('click') onClicks() {
+    this.highlight('green')
   }
 
-  @HostListener('mouseleave') onMouseLeave() {
+  @HostListener('dbclick') onDoubleClick() {
     this.highlight('null')
   }
 

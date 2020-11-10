@@ -1,12 +1,17 @@
-
-
-<p> quote: {{quote.quote}}</p>
+<div>
+    <p> quote: {{quote.quote}}</p>
 <p>This quote was posted {{quote.datePosted|datePost}} days ago</p>
 <p> publisher: {{quote.publisher}}</p>
-<button class="btn btn-sm-success" (click)='upvote'>{{quote.like}} <i class="fa fa-thumbs-up" id="like"></i></button>
-<button class="btn btn-sm-hate" (click)='downvote'>{{quote.dislike}} <i class="fa fa-thumbs-up" id="dislike"></i></button>
+<div class="container-fluid" id="button">
+    <!-- <button class="btn btn-sm-success" (click)='upvote'>{{quote.like}} <i id="like"></i></button>
+<button class="btn btn-sm-hate" (click)='downvote'>{{quote.dislike}} <i  id="dislike"></i></button> -->
 
-<button (click)= 'quoteComplete(true)'>Complete</button>
+
+</div>
+
+</div>
+<!-- <button (click)= 'quoteComplete(true)'>Complete</button> -->
+
 
 <!-- <p> publisher: {{quote.publisher}}</p>
 !-- <div class="container" style="color: black; font-weight: bolder;">
