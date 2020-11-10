@@ -9,9 +9,9 @@ import { Quote } from './../quote';
 export class QuoteComponent implements OnInit {
 
   quotes: Quote[] = [
-     new Quote(1,'Gladys','Never say never','John Doe'),
-     new Quote(2,'Grace', 'proscrastintination is the thief of time', 'Luther KIng'),
-     new Quote(3,'John', 'everything is possible', 'Moses Bliss'),
+     new Quote(1,'Gladys','Never say never','John Doe',new Date(2020,11,10),0,0),
+     new Quote(2,'Grace', 'proscrastintination is the thief of time', 'Luther KIng',new Date(2020,9,11),0,0),
+     new Quote(3,'John', 'everything is possible', 'Moses Bliss',new Date(2020,11,12),0,0),
   ];
   
 

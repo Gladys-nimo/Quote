@@ -3,7 +3,7 @@
     <h1>My quotes</h1>
     <ul>
         <div *ngFor='let quote of quotes;let i = index'>
-            <li >{{quote.name}}</li>
+            <li appHighlight>{{quote.name}} posted on {{quote.datePosted|date}}</li>
              <button (click)='toggleDetails(i)'>Toggle Details</button>
             <app-quote-detail *ngIf='quote.showDetails' [quote]='quote' (isComplete) = 'completeQuote($event,i)'></app-quote-detail>
 
