@@ -1,1 +1,8 @@
-<p>quote works!</p>
+
+<div>
+    <h1>My quotes</h1>
+    <ul>
+        <div *ngFor='let quote of quotes;let i = index'>
+            <p>{{quote.name}} {{quote.maxlikes}} posted on {{quote.datePosted|date}}</p>
+            <button (click)='toggleDetails(i)' class="btn btn-primary">Toggle Details</button>
+ <app-quote-details *ngIf='quote.showDetails' [quote]='quote' (isComplete) = 'deleteQuote($event,i)'></app-quote-details>
