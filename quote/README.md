@@ -1,6 +1,13 @@
 # Quote
+Quote,November 11th 2020
+
+By Gladys Wairimu
+# Description
+ An application that enables users to add, delete quotes, and you can see exsiting quotes
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.0.
+# Known bugs
+not able to deploy the app
 
 ## Development server
 
